@@ -3,6 +3,7 @@
     <ZoomLoadingComponent />
     <SpinnerLoadingComponent />
     <SpinningLoadingComponent />
+    <BouncingLoaderComponent />
   </div>
 </template>
 
@@ -10,6 +11,7 @@
 import ZoomLoadingComponent from "../components/zoom-loading.vue";
 import SpinnerLoadingComponent from "../components/spinner-loading.vue";
 import SpinningLoadingComponent from "../components/spinning-loading.vue";
+import BouncingLoaderComponent from "../components/bouncing-loading.vue";
 
 export default {
   name: "IndexPage",
@@ -17,6 +19,7 @@ export default {
     ZoomLoadingComponent,
     SpinnerLoadingComponent,
     SpinningLoadingComponent,
+    BouncingLoaderComponent,
   },
 };
 </script>

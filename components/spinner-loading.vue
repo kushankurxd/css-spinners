@@ -16,7 +16,6 @@ export default {
 .spinner-loading-wrapper {
   width: 140px;
   height: 140px;
-  margin-left: 200px;
 }
 
 .spinner-loading {

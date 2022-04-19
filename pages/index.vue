@@ -1,9 +1,12 @@
 <template>
   <div class="container">
-    <ZoomLoadingComponent />
-    <SpinnerLoadingComponent />
-    <SpinningLoadingComponent />
-    <BouncingLoaderComponent />
+    <div class="sub-container">
+      <ZoomLoadingComponent />
+      <SpinnerLoadingComponent />
+      <SpinningLoadingComponent />
+      <BouncingLoaderComponent />
+    </div>
+    <div class="sub-container"><BasketballLoadingComponent /></div>
   </div>
 </template>
 
@@ -12,6 +15,7 @@ import ZoomLoadingComponent from "../components/zoom-loading.vue";
 import SpinnerLoadingComponent from "../components/spinner-loading.vue";
 import SpinningLoadingComponent from "../components/spinning-loading.vue";
 import BouncingLoaderComponent from "../components/bouncing-loading.vue";
+import BasketballLoadingComponent from "../components/basketball-loading.vue";
 
 export default {
   name: "IndexPage",
@@ -20,6 +24,7 @@ export default {
     SpinnerLoadingComponent,
     SpinningLoadingComponent,
     BouncingLoaderComponent,
+    BasketballLoadingComponent,
   },
 };
 </script>
@@ -30,7 +35,15 @@ export default {
   height: 100vh;
   background-color: #180a0a;
   display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.sub-container {
+  width: inherit;
+  display: flex;
   justify-content: space-around;
   align-items: center;
+  margin-bottom: 2vh;
 }
 </style>
